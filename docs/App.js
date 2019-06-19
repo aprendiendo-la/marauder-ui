@@ -1,15 +1,17 @@
 import React from "react";
 
-import { H1, H2, H3, H4, Button } from "marauder";
+import { H1, H2, H3, H4, Button, CourseCard, Plan } from "marauder";
 
 const App = () => (
-    <div>
-        <H1>Heading 1</H1>
-        <H2>Heading 2</H2>
-        <H3>Heading 3</H3>
-        <H4>Heading 4</H4>
-        <Button>Click here</Button>
-    </div>
+  <div>
+    <H1>Heading 1</H1>
+    <H2>Heading 2</H2>
+    <H3>Heading 3</H3>
+    <H4>Heading 4</H4>
+    <Button>Comprar</Button>
+    <CourseCard title="hola" />
+    <Plan name="Seminario" />
+  </div>
 );
 
 export default App;
