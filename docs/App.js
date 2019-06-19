@@ -10,7 +10,7 @@ const App = () => (
     <H4>Heading 4</H4>
     <Button>Comprar</Button>
     <CourseCard title="hola" />
-    <Plan name="Seminario" />
+    <Plan plan={{ id: 1, name: "Seminario", amount: 109, features: [] }} />
   </div>
 );
 

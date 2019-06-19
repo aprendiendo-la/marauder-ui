@@ -1,22 +1,26 @@
 import * as React from "react";
+import { IPlan } from "./Plan";
 
 interface Props {
-  name: string;
-  amount: string;
-  features: Array<string>;
+  plan: IPlan;
 }
 
-const Plan: React.SFC<Props> = props => {
+const Plan: React.SFC<Props> = ({ plan }) => {
   return (
     <div>
-      <h1>{props.name}</h1>
-      <p>{props.amount}</p>
+      <h1>{plan.name}</h1>
+      <p>{plan.amount}</p>
     </div>
   );
 };
 
-Plan.defaultProps = {
-  name: "..."
-};
+// Plan.defaultProps = {
+//   plan: {
+//     id: 0,
+//     name: '',
+//     amount: 0,
+//     features: []
+//   }
+// };
 
 export default Plan;
