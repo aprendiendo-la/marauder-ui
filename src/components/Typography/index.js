@@ -5,7 +5,7 @@ import theme from "../../theme";
 export const H1 = styled.h1`
   font-size: 30px;
   font-weight: 900;
-  color: ${theme.primary};
+  color: ${theme.dark};
 `;
 
 export const H2 = styled(props => <H1 {...props} />)`
@@ -15,9 +15,18 @@ export const H2 = styled(props => <H1 {...props} />)`
 
 export const H3 = styled(props => <H1 {...props} />)`
   font-size: 18px;
-  font-weight: 500;
 `;
 
 export const H4 = styled(props => <H1 {...props} />)`
   font-size: 15px;
+  font-weight: 500;
+`;
+
+export const H5 = styled(props => <H1 {...props} />)`
+  font-size: 13px;
+  font-weight: 500;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 13px;
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 
-import { H1, H2, H3, H4, Button, CourseCard, Plan } from "marauder";
+import { H1, H2, H3, H4, Button, CourseCard, Plan, Avatar } from "marauder";
+import { StudentCard } from "../src";
 
 const App = () => (
   <div>
@@ -11,6 +12,13 @@ const App = () => (
     <Button>Comprar</Button>
     <CourseCard title="hola" />
     <Plan plan={{ id: 1, name: "Seminario", amount: 109, features: [] }} />
+    <Avatar
+      src="https://live.staticflickr.com/3463/3365970885_13fa424b96.jpg"
+      size="large"
+      round
+      borderStyle="1px solid #000"
+    />
+    <StudentCard />
   </div>
 );
 
