@@ -12,7 +12,7 @@ interface ContainerProps {
 }
 
 const Container = styled.div<ContainerProps>`
-  max-width: 210px;
+  width: 210px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0px 0px 12px 1px rgba(197, 197, 197, 0.75);
@@ -34,9 +34,15 @@ interface Props {
   title: string;
   subtitle: string;
   slogan: string;
+  avatarImage: string;
 }
 
-const StudentCard: React.SFC<Props> = ({ title, subtitle, slogan }) => {
+const StudentCard: React.SFC<Props> = ({
+  title,
+  subtitle,
+  slogan,
+  avatarImage
+}) => {
   return (
     <Container>
       <div
@@ -64,7 +70,7 @@ const StudentCard: React.SFC<Props> = ({ title, subtitle, slogan }) => {
           }}
         >
           <Avatar
-            src="https://live.staticflickr.com/3463/3365970885_13fa424b96.jpg"
+            src={avatarImage}
             round
             size="large"
             borderStyle="2px solid #fff"

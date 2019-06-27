@@ -4,3 +4,4 @@ export { default as CourseCard } from "./components/CourseCard";
 export { default as Plan } from "./components/Plan";
 export { default as Avatar } from "./components/Avatar";
 export { default as StudentCard } from "./components/StudentCard";
+export { default as CourseList } from "./components/CourseList";

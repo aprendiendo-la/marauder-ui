@@ -19,7 +19,6 @@ export const H3 = styled(props => <H1 {...props} />)`
 
 export const H4 = styled(props => <H1 {...props} />)`
   font-size: 15px;
-  font-weight: 500;
 `;
 
 export const H5 = styled(props => <H1 {...props} />)`
