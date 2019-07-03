@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Component Renders Avatar component 1`] = `
+<styled.div
+  borderStyle="none"
+  height={75}
+  round={false}
+  src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+  width={75}
+/>
+`;
+
+exports[`Avatar Component renders the avatar 1`] = `
+<styled.div
+  borderStyle="none"
+  height={75}
+  round={false}
+  src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+  width={75}
+/>
+`;

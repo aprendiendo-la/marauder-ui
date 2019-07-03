@@ -3,7 +3,19 @@ import { shallow } from "enzyme";
 
 import Avatar from "../index";
 
-it("renders the heading", () => {
-    const result = shallow(<Avatar />).contains(<h1>Hello!</h1>);
-    expect(result).toBeTruthy();
-});
+const setUp = (props = {}) => {
+    const component = shallow(<Avatar {...props}/>)
+    return component;
+}
+
+describe('Avatar Component', () => {
+    let component : any;
+
+    beforeEach(() => {
+        component = setUp();
+    })
+
+    it("Renders Avatar component", () => {
+        expect(component).toMatchSnapshot()
+    });
+})
